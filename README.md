@@ -1,8 +1,8 @@
 # Algorithms
 
 This repository contains solutions to various algorithm challenges organized by 
-language. I plan on posting solutions more regularly as a reference for myself and to hold 
-myself accountable to DSA problem sets more regularly. 
+language. I plan on posting solutions more regularly as a reference and to help others
+prepare for technical interviews and DSA problem sets. 
 
 ## Problem Solving Resources for DSA and Mathematics 
 
@@ -10,7 +10,7 @@ myself accountable to DSA problem sets more regularly.
 
 [Jeff Erickson's CS Resources](https://jeffe.cs.illinois.edu/)
 
-These books are available for purchase. PDF versions can also be found online. 
+These books are available online in PDF and for purchase 
 
 [Search for *Polya's - How to Solve It* on Google](https://www.google.com/search?q=Polya's+-+How+to+Solve+It)
 
