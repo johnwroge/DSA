@@ -103,7 +103,7 @@ class EventEmitter {
   
   1. Clarify requirements through questioning, but also (most importantly) concrete examples
   2. Write test cases. Creating the instance, utilizing it with different arguments. Identifying and covering possible edge cases.  
-  3. Try to solve the problem conceptually in pseudo. (not a full implementation, but just to cover primary underlying logic)
+  3. Try to solve the problem conceptually in pseudo code. (not a full implementation, but just to cover primary underlying logic)
   4. Proceed with a concrete implementation
   
   */

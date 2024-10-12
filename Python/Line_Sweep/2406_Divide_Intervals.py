@@ -1,4 +1,6 @@
 '''
+2406. Divide Intervals Into Minimum Number of Groups
+
 You are given a 2D integer array intervals where intervals[i] = [lefti, righti] 
 represents the inclusive interval [lefti, righti].
 
@@ -51,7 +53,21 @@ class Solution:
             count += lines[k]
             max_c = max(count, max_c)
         return max_c
-    
+
+
+# Heap Approach
+
+class Solution:
+    def minGroups(self, intervals: List[List[int]]) -> int:
+        min_heap = []
+        intervals_sorted = sorted(intervals, key=lambda x:x[0])
+
+        for start, end in intervals_sorted:
+            if min_heap and min_heap[0] < start:
+                heapq.heappop(min_heap)
+            heapq.heappush(min_heap, end)
+        
+        return len(min_heap) 
 
 # LC Solutions
 
