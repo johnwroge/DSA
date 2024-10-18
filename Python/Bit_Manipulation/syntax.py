@@ -55,3 +55,27 @@ if somenumber & 1 == 0:
     print('even')
 else:
     print('odd')
+
+
+# Bitwise OR
+
+'''
+The bitwise OR operation compares each bit of the two operands.
+If either bit is 1, the resulting bit is 1.
+If both bits are 0, the resulting bit is 0.
+'''
+
+x = 5  # 0101 in binary
+x |= 3  # 0011 in binary
+print(x)
+
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+
+dict1 |= dict2
+print(dict1)
+
+# Calculate the maximum possible OR value
+max_or_value = 0
+for num in nums:
+    max_or_value |= num
