@@ -5,7 +5,6 @@ Orders elements by priority.
 
 Heap: concrete data structure
 
-
 '''
 
 

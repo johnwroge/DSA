@@ -37,21 +37,26 @@ All the integers in s are in the range [1, 300].
 
 '''
 
-def decodeString(s: str) -> str:
-    return s
-
-    
-
-        
-        
-        
-
-
-        
-
-    
-    return res
-
+class Solution:
+    def decodeString(self, s: str) -> str:
+        stack = []
+        curr = ''
+        for c in s:
+            if c == "]":
+                while stack and stack[-1] != "[":
+                    curr += stack.pop()
+                curr = curr[::-1]
+                stack.pop()
+                num = ''
+                while stack and stack[-1].isdigit():
+                    num += stack.pop()
+                num = int(num[::-1])
+                chars = num * curr
+                stack += list(chars)
+                curr = ''
+            else:
+                stack.append(c)
+        return ''.join(stack)
 
 s = "3[a]2[bc]"
 print(decodeString(s))

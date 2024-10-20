@@ -1,7 +1,7 @@
 # Algorithms
 
 This repository contains solutions to various algorithm challenges organized by 
-language. I plan on posting solutions more regularly as a reference and to help others
+language. I plan on posting solutions more regularly as a reference to help others 
 prepare for technical interviews and DSA problem sets. 
 
 ## Problem Solving Resources for DSA and Mathematics 
@@ -22,7 +22,7 @@ These books are available online in PDF and for purchase
 
 [Search for *Art of Computer Programming Vol I Fundamental Algorithms* on Google](https://www.google.com/search?q=Art+of+Computer+Programming+Vol+I+Fundamental+Algorithms)
 
-
+[Competitive Programmers Handbook](https://cses.fi/book/book.pdf)
 
 ## Online Assessment Resources
 
@@ -53,6 +53,22 @@ References for Codesignal, Hackerrank, and Various Companies
 
 [Codecademy](https://www.codecademy.com/learn/learn-data-structures-and-algorithms-with-python)
 
+## Templates
+
+[Algo Monster](https://algo.monster/templates)
+[Pirate King](https://www.piratekingdom.com/leetcode/templates)
+
+## Extensive Github Repositories By Language
+
+[Python](https://github.com/subbarayudu-j/TheAlgorithms-Python)
+
+[Python](https://github.com/SamirPaulb/DSAlgo)
+
+[Java](https://github.com/Seanforfun/Algorithm-and-Leetcode?tab=readme-ov-file)
+
+[Go](https://github.com/halfrost/LeetCode-Go)
+
+[C++](https://github.com/haoel/leetcode)
 
 
 
