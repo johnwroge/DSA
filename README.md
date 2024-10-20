@@ -4,6 +4,8 @@ This repository contains solutions to various algorithm challenges organized by
 language. I plan on posting solutions more regularly as a reference to help others 
 prepare for technical interviews and DSA problem sets. 
 
+[leetcode profile](https://leetcode.com/u/w01john/)
+
 ## Problem Solving Resources for DSA and Mathematics 
 
 ![Approach to Problem Solving](https://i.imgur.com/IyE4PRX.png)
