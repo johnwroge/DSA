@@ -58,7 +58,7 @@ References for Codesignal, Hackerrank, and Various Companies
 [Algo Monster](https://algo.monster/templates)
 [Pirate King](https://www.piratekingdom.com/leetcode/templates)
 
-##Github DSA Collections By Language
+## Github DSA Collections By Language
 
 [Python - The Algorithms](https://github.com/subbarayudu-j/TheAlgorithms-Python)
 
