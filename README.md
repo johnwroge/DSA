@@ -10,7 +10,7 @@ prepare for technical interviews and DSA problem sets.
 
 [Jeff Erickson's CS Resources](https://jeffe.cs.illinois.edu/)
 
-These books are available online in PDF and for purchase. I chose not to include pdf links 
+These books are available online in PDF and for purchase. I chose not to include pdf links, but they are easily obtainable through google. 
 
 [Search for *Polya's - How to Solve It* on Google](https://www.google.com/search?q=Polya's+-+How+to+Solve+It)
 
