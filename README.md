@@ -1,4 +1,4 @@
-# Algorithms
+# Data Structures and Algorithms
 
 This repository contains solutions to various algorithm challenges organized by 
 language. I plan on posting solutions more regularly as a reference to help others 
