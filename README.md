@@ -8,11 +8,9 @@ prepare for technical interviews and DSA problem sets.
 
 ## Problem Solving Resources for DSA and Mathematics 
 
-![Approach to Problem Solving](https://i.imgur.com/IyE4PRX.png)
-
 [Jeff Erickson's CS Resources](https://jeffe.cs.illinois.edu/)
 
-These books are available online in PDF and for purchase 
+These books are available online in PDF and for purchase. I chose not to include pdf links 
 
 [Search for *Polya's - How to Solve It* on Google](https://www.google.com/search?q=Polya's+-+How+to+Solve+It)
 
@@ -60,17 +58,17 @@ References for Codesignal, Hackerrank, and Various Companies
 [Algo Monster](https://algo.monster/templates)
 [Pirate King](https://www.piratekingdom.com/leetcode/templates)
 
-## Extensive Github Repositories By Language
+##Github DSA Collections By Language
 
-[Python](https://github.com/subbarayudu-j/TheAlgorithms-Python)
+[Python - The Algorithms](https://github.com/subbarayudu-j/TheAlgorithms-Python)
 
-[Python](https://github.com/SamirPaulb/DSAlgo)
+[Python - DSAlgo](https://github.com/SamirPaulb/DSAlgo)
 
-[Java](https://github.com/Seanforfun/Algorithm-and-Leetcode?tab=readme-ov-file)
+[Java - Algorithm and Leetcode](https://github.com/Seanforfun/Algorithm-and-Leetcode?tab=readme-ov-file)
 
-[Go](https://github.com/halfrost/LeetCode-Go)
+[Go - Leetcode-Go](https://github.com/halfrost/LeetCode-Go)
 
-[C++](https://github.com/haoel/leetcode)
+[C++ - Leetcode](https://github.com/haoel/leetcode)
 
 
 
