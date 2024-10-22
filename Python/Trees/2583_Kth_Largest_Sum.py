@@ -55,7 +55,7 @@ which can be done using the Breadth First Search algorithm.
 We traverse through the tree level by level and accumulate each of the levels values
 after finding all the values we calculate the sum and append it to another array.
 
-Once all the sums are calculated we can determine the kth largest by sorting othewise if there
+Once all the sums are calculated we can determine the kth largest by sorting otherwise if there
 is no solution we return -1. 
 
 '''
