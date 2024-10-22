@@ -40,6 +40,7 @@ What is the greatest product of four adjacent numbers in the same direction
 '''
 
 import os
+import numpy as np
 file_path = os.path.abspath('./Project_Euler/input/11_nums.txt')
 
 
@@ -90,7 +91,7 @@ rotated = list(zip(*grid[::-1]))
 
 # print(rotated)
 
-import numpy as np
+
 
 # def find_diagonal_product(grid):
 #     a = np.matrix(grid)
@@ -99,7 +100,7 @@ import numpy as np
 
 # for line in grid:
 
-grid = np.loadtxt("/Users/johnwroge/DailyAlgos/Project_Euler/11_nums.txt")
+grid = np.loadtxt('./Project_Euler/input/11_nums.txt')
 all_products = []
 
 def get_horizontal():
