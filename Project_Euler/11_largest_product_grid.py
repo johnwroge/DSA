@@ -39,7 +39,11 @@ What is the greatest product of four adjacent numbers in the same direction
 
 '''
 
-with open('/Users/johnwroge/DailyAlgos/Project_Euler/11_nums.txt') as f:
+import os
+file_path = os.path.abspath('./Project_Euler/input/11_nums.txt')
+
+
+with open(file_path) as f:
     commands = f.readlines()
 
 grid = []
@@ -53,10 +57,11 @@ for i, List in enumerate(grid):
 grid.pop()
 
 
-# horizontally, left to right
+
 from functools import reduce 
 import operator
 import math
+
 # https://docs.python.org/3.8/library/math.html#math.prod
 
 # reduce(operator.mul, (3, 4, 5), 1)

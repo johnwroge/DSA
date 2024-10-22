@@ -30,8 +30,12 @@ greatest product. What is the value of this product?
 
 from functools import reduce
 from operator import mul
+import os
 
-with open('/Users/johnwroge/DailyAlgos/Project_Euler/8_number.txt') as f:
+# Assuming 'file.txt' is in the current working directory
+file_path = os.path.abspath('./Project_Euler/input/8_number.txt')
+
+with open(file_path) as f:
     commands = f.readlines()
 
 result = "".join(commands)
