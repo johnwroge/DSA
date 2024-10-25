@@ -47,7 +47,7 @@ class Solution:
 '''
 Solution 2: similar approach as above except we use recursion and a boolean flag. We remove the character and change 
 the boolean flag to true we explore all possible solutions removing a character if it doesn't match. if we find a 
-second character that doesnt match. return False for the possible solution Otherwise if all characters are exhausted
+second character that doesn't match return False for that possible solution. Otherwise if all characters are exhausted
 we return True. 
 '''
 
