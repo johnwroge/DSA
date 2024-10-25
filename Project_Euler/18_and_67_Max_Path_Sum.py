@@ -42,7 +42,9 @@ NOTE: As there are only
 '''
 import os
 
-file_path = os.path.abspath('./Project_Euler/input/18_pyramid.txt')
+file_path = os.path.abspath('./Project_Euler/input/67.txt')
+# file_path = os.path.abspath('./Project_Euler/input/18_pyramid.txt')
+
 
 with open(file_path) as f:
     commands = f.readlines()
@@ -58,7 +60,7 @@ for line in commands:
 for i in range(len(pyramid) - 2, -1, -1):
     for j in range(len(pyramid[i])):
         pyramid[i][j] += max(pyramid[i + 1][j], pyramid[i + 1][j + 1])
-print(pyramid)
+print(pyramid[0][0])
 
 
 
