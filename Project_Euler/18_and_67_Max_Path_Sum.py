@@ -56,7 +56,7 @@ for line in commands:
     level = [int(num) for num in level]
     pyramid.append(level)
 
-
+# Bottom up dynamic programming
 for i in range(len(pyramid) - 2, -1, -1):
     for j in range(len(pyramid[i])):
         pyramid[i][j] += max(pyramid[i + 1][j], pyramid[i + 1][j + 1])
