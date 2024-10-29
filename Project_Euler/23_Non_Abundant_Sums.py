@@ -46,11 +46,7 @@ return the final list
 
 '''
 
-# for each number
-    # find all numbers that divide evenly with it, 
-    # add those together, 
-    # check if they are greater than the number
-        # if yes store in a set, this is a set of abundant numbers
+
 def sum_of_divisors(n):
     total = 0
     for i in range(1, (n // 2) + 1):
