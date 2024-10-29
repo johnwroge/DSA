@@ -38,7 +38,7 @@ Open Source collection of data structures and algorithms in most modern language
 ## Leetcode Question Lists
 - [Blind 75](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
 - [Neetcode 150](https://neetcode.io/practice)
-- [TopSWE (Leetcode)](https://topswe.com/)
+- [TopSWE](https://topswe.com/)
 
 ## Youtube
 - [Neetcode](https://www.youtube.com/c/neetcode)
