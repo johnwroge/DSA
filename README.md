@@ -11,7 +11,7 @@ Open Source collection of data structures and algorithms in most modern language
 
 - [TheAlgorithms](https://github.com/thealgorithms)
 
-### Quick Language Links
+### TheAlgorithm Language Links
 
 - [Java](https://github.com/TheAlgorithms/Java/tree/master)
 - [Go](https://github.com/TheAlgorithms/Go)
