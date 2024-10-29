@@ -27,8 +27,6 @@ lib/
 
 
 *.tsbuildinfo
-
-
 logs/
 *.log
 
