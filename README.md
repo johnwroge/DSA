@@ -28,7 +28,7 @@ Open Source collection of data structures and algorithms in most modern language
 
 ## Free Algorithm Challenges
 
-[Leetcode](https://leetcode.com/) is a popular platform for coding and algorithm practice, ideal for interview preparation. 
+[Leetcode](https://leetcode.com/) is a platform for coding and algorithm practice.
 
 [Advent of Code](https://adventofcode.com/) is an annual coding challenge series that takes place every December, offering a set of puzzles with a holiday-themed narrative. Each day from December 1st to 25th, a new puzzle is released, challenging participants to solve problems involving algorithms, data structures, and optimization. These puzzles increase in difficulty and often involve creative problem-solving and efficiency improvements. The goal is to provide both a fun way to practice programming and an engaging way to improve skills in areas like parsing, recursion, graph traversal, and dynamic programming.
 
