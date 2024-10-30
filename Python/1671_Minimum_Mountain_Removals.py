@@ -90,7 +90,7 @@ class Solution:
 
 
 
-# solutions from leetcode
+# DP Leetcode
 
 from typing import List
 class Solution:
@@ -121,8 +121,38 @@ class Solution:
 
         return min_removals
 
-# Optimized Solution using Binary Search. 
+# Optimized Solution using Binary Search
 
+from typing import List
+from bisect import bisect_left
+
+class Solution:
+    def minimumMountainRemovals(self, nums: List[int]) -> int:
+        n = len(nums)
+        
+        def calculate_lis(nums: List[int]) -> List[int]:
+            lis = []
+            lis_len = [0] * len(nums)
+            for i, num in enumerate(nums):
+                pos = bisect_left(lis, num)
+                if pos < len(lis):
+                    lis[pos] = num
+                else:
+                    lis.append(num)
+                lis_len[i] = pos + 1
+            return lis_len
+        
+        lis_left = calculate_lis(nums)
+        lis_right = calculate_lis(nums[::-1])[::-1]
+        
+        max_mountain_len = 0
+        for i in range(1, n - 1):
+            if lis_left[i] > 1 and lis_right[i] > 1:
+                max_mountain_len = max(max_mountain_len, lis_left[i] + lis_right[i] - 1)
+        
+        return n - max_mountain_len
+
+# Leetcode Solution using Binary Search. 
 class Solution:
     def getLongestIncreasingSubsequenceLength(self, v: List[int]) -> List[int]:
         lis_len = [1] * len(v)
