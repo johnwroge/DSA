@@ -1,6 +1,5 @@
-Project Euler solutions collected by Luckytoilet and others.
-https://github.com/luckytoilet/projecteuler-solutions
-https://www.tapatalk.com/groups/eulersolutionsfr/
+Project Euler solutions
+
 1. 233168
 2. 4613732
 3. 6857
@@ -13,7 +12,6 @@ https://www.tapatalk.com/groups/eulersolutionsfr/
 10. 142913828922
 11. 70600674
 12. 76576500
-
 13. 5537376230
 14. 837799
 15. 137846528820
