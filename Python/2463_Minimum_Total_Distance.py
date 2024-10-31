@@ -61,7 +61,15 @@ The input will be generated such that it is always possible to repair every robo
 '''
 
 
+'''
+Solution
 
+
+This is a dynamic programming problem because we have overlapping sub problems and we 
+are looking for a globally optimal solution with multiple constraints. 
+
+
+'''
 
 
 # recursive dp with memo 
