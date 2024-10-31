@@ -1,8 +1,8 @@
 '''
 There are some robots and factories on the X-axis. You are given an integer array robot where robot[i]
- is the position of the ith robot. You are also given a 2D integer array factory where 
- factory[j] = [positionj, limitj] indicates that positionj is the position of the jth factory and that
-   the jth factory can repair at most limitj robots.
+is the position of the ith robot. You are also given a 2D integer array factory where 
+factory[j] = [positionj, limitj] indicates that positionj is the position of the jth factory and that
+the jth factory can repair at most limitj robots.
 
 The positions of each robot are unique. The positions of each factory are also unique. Note that a robot
  can be in the same position as a factory initially.
