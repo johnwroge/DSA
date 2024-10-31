@@ -1,4 +1,4 @@
-'''
+/*
 There are some robots and factories on the X-axis. You are given an integer array robot where robot[i]
 is the position of the ith robot. You are also given a 2D integer array factory where 
 factory[j] = [positionj, limitj] indicates that positionj is the position of the jth factory and that
@@ -58,10 +58,10 @@ factory[j].length == 2
 -109 <= robot[i], positionj <= 109
 0 <= limitj <= robot.length
 The input will be generated such that it is always possible to repair every robot.
-'''
+*/
 
 
-'''
+/*
 Solution
 
 
@@ -93,68 +93,76 @@ by making independent, locally optimal choices at each step. Essentially, the pr
 demands a comprehensive exploration of all possible robot-to-factory assignments to
 find the truly minimal total distance configuration.
 
-'''
+*/
+
+class Solution {
+    minimumTotalDistance(robot: number[], factory: number[][]): number {
+        robot.sort((a, b) => a - b);
+        factory.sort((a, b) => a[0] - b[0]);
+
+        const memo = new Map<string, number>();
+
+        const dp = (i: number, j: number): number => {
+            if (i === robot.length) return 0;
+            if (j === factory.length) return Infinity;
+
+            const key = `${i}-${j}`;
+            if (memo.has(key)) return memo.get(key)!;
+
+            let skip = dp(i, j + 1);
+
+            let take = 0;
+            let count = 0;
+            for (let k = 0; k < factory[j][1]; k++) {
+                if (i + k >= robot.length) break;
+
+                take += Math.abs(robot[i + k] - factory[j][0]);
+                count += 1;
+
+                const sub = dp(i + k + 1, j + 1);
+
+                if (sub !== Infinity) skip = Math.min(skip, take + sub);
+            }
+
+            memo.set(key, skip);
+            return skip;
+        };
+
+        return dp(0, 0);
+    }
+}
 
 
-# recursive dp with memo 
-
-class Solution:
-    def minimumTotalDistance(self, robot: List[int], factory: List[List[int]]) -> int:
-        # Sort robots and factories
-        robot.sort()
-        factory.sort()
+//  optimal iterative bottom up DP using a monotonic deque
+class Solution {
+    minimumTotalDistance(robot: number[], factory: number[][]): number {
+        robot.sort((a, b) => a - b);
+        factory.sort((a, b) => a[0] - b[0]);
         
-        # Memoization to store computed results
-        @cache
-        def dp(i, j):
-            # Base cases
-            if i == len(robot):  # All robots placed
-                return 0
-            if j == len(factory):  # No more factories, but robots remain
-                return float('inf')
-            
-            # Option 1: Skip this factory
-            skip = dp(i, j + 1)
-            
-            # Option 2: Place robots in this factory
-            take = 0
-            count = 0
-            for k in range(factory[j][1]):  # Respect factory capacity
-                if i + k >= len(robot):
-                    break
-                
-                # Calculate distance for this robot
-                take += abs(robot[i + k] - factory[j][0])
-                count += 1
-                
-                # Recursively place remaining robots
-                sub = dp(i + k + 1, j + 1)
-                
-                # Update minimum total distance
-                if sub != float('inf'):
-                    skip = min(skip, take + sub)
-            
-            return skip
-        
-        # Return minimum total distance
-        return dp(0, 0)
-    
-# optimal iterative bottom up DP using a monotonic deque
+        const m = robot.length;
+        const n = factory.length;
+        const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
 
-class Solution:
-    def minimumTotalDistance(self, robot: List[int], factory: List[List[int]]) -> int:
-        robot.sort()
-        factory.sort()
-        m, n = len(robot), len(factory)
-        dp = [[0]*(n+1) for _ in range(m+1)] 
-        for i in range(m): dp[i][-1] = inf 
-        for j in range(n-1, -1, -1): 
-            prefix = 0 
-            qq = deque([(m, 0)])
-            for i in range(m-1, -1, -1): 
-                prefix += abs(robot[i] - factory[j][0])
-                if qq[0][0] > i+factory[j][1]: qq.popleft()
-                while qq and qq[-1][1] >= dp[i][j+1] - prefix: qq.pop()
-                qq.append((i, dp[i][j+1] - prefix))
-                dp[i][j] = qq[0][1] + prefix
-        return dp[0][0]
+        for (let i = 0; i < m; i++) dp[i][n] = Infinity;
+
+        for (let j = n - 1; j >= 0; j--) {
+            let prefix = 0;
+            const qq: [number, number][] = [[m, 0]];
+            
+            for (let i = m - 1; i >= 0; i--) {
+                prefix += Math.abs(robot[i] - factory[j][0]);
+                
+                if (qq[0][0] > i + factory[j][1]) qq.shift();
+                
+                while (qq.length > 0 && qq[qq.length - 1][1] >= dp[i][j + 1] - prefix) {
+                    qq.pop();
+                }
+                
+                qq.push([i, dp[i][j + 1] - prefix]);
+                dp[i][j] = qq[0][1] + prefix;
+            }
+        }
+
+        return dp[0][0];
+    }
+}
