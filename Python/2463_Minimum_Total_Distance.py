@@ -69,6 +69,19 @@ This is a dynamic programming problem because we have overlapping sub problems a
 are looking for a globally optimal solution with multiple constraints. 
 
 
+From Claude:
+
+The problem requires dynamic programming because a greedy approach fails to capture the
+global optimization challenge. The complexity arises from simultaneous constraints: factor
+y capacity limits, total distance minimization, and the requirement to place every robot. A
+local, greedy strategy of assigning each robot to its nearest factory can catastrophically
+suboptimal, as the placement of one robot dramatically impacts the potential placements
+of subsequent robots. The interdependence of decisions, combined with the exponential
+growth of possible configurations, means that the optimal solution cannot be determined
+by making independent, locally optimal choices at each step. Essentially, the problem
+demands a comprehensive exploration of all possible robot-to-factory assignments to
+find the truly minimal total distance configuration.
+
 '''
 
 
