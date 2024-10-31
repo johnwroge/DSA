@@ -68,6 +68,17 @@ Solution
 This is a dynamic programming problem because we have overlapping sub problems and we 
 are looking for a globally optimal solution with multiple constraints. 
 
+I tried a greedy approach at first, but this failed for this test case:
+robot = [9,11,99,101]
+factory = [[10,1],[7,1],[14,1],[100,1],[96,1],[103,1]]
+
+In this test case, a greedy approach would initially assign the robots 9 and 11 to the nearest
+factories at 10 and 7, respectively. However, this local optimization prevents the most efficient
+placement of the robots at 99 and 101. The globally optimal solution requires leaving some closer
+factories partially unused to enable a more efficient overall configuration for all robots.
+By prematurely assigning the first two robots to their closest factories, a greedy algorithm
+would likely increase the total distance for the remaining robots, missing the opportunity
+to minimize the overall movement across all robots and factories.
 
 From Claude:
 
