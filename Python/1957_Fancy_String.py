@@ -50,6 +50,8 @@ class Solution:
             l += 1
         return ''.join(letters)
 
+
+
 # approach 2 - track previous character and use stack 
 
 class Solution:
@@ -67,4 +69,3 @@ class Solution:
                     stack.append(c)
             prev = c
         return ''.join(stack)
-        
