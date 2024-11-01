@@ -40,5 +40,15 @@ class Solution:
         for i in range(k):
             curr = nums.pop()
         return curr
-
+import heapq
+# with a heap
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        nums = [-n for n in nums]
+        heapq.heapify(nums)
+        curr = None
+        for i in range(k):
+            curr = -1 * heapq.heappop(nums)
+        return curr
+        
         
