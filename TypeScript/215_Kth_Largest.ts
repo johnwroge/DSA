@@ -33,6 +33,29 @@ Constraints:
 '''
 */
 
+import { MaxPriorityQueue } from "@datastructures-js/priority-queue";
+
+var findKthLargest = function(nums: number[], k: number) {
+  
+  
+    let maxPriorityQueue = new MaxPriorityQueue();
+    
+    // we need to add all elements to our mpq manually time-0(n) 
+    nums.forEach((num: number) => maxPriorityQueue.enqueue(num))
+    
+    
+    // keep  removing(pop) element from the top 
+    while(k>1){
+      maxPriorityQueue.dequeue()
+      k--
+    }
+    
+    // by default maxPriorityQueue.front() returns an objects {priority:5, element:5} 
+    // priority will give same result.
+    return maxPriorityQueue.front().element
+    
+  };
+
 var findKthLargest = function(nums: number[], k: number) {
     let min = Math.min(...nums);
     let max = Math.max(...nums);
