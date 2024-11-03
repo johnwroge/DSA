@@ -40,9 +40,15 @@ class Solution:
 
 '''
 Knuth-Morris-Pratt (KMP) Algorithm, which allows for quicker substring searches. 
- 
+
 https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
 https://cp-algorithms.com/string/prefix-function.html
+
+Can be used to solve these problems as well:
+
+3006. Find Beautiful Indices in the Given Array I
+3008. Find Beautiful Indices in the Given Array II
+3036. Number of Subarrays That Match a Pattern II
 
 '''
 
