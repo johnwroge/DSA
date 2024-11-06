@@ -30,6 +30,8 @@ Open Source collection of data structures and algorithms in most modern language
 
 [Leetcode](https://leetcode.com/) is a platform for coding and algorithm practice.
 
+[Deep ML](https://www.deep-ml.com/) is a platform for coding and algorithm practice for ML coding challenges. 
+
 [Advent of Code](https://adventofcode.com/) is an annual coding challenge series that takes place every December, offering a set of puzzles with a holiday-themed narrative. Each day from December 1st to 25th, a new puzzle is released, challenging participants to solve problems involving algorithms, data structures, and optimization. These puzzles increase in difficulty and often involve creative problem-solving and efficiency improvements. The goal is to provide both a fun way to practice programming and an engaging way to improve skills in areas like parsing, recursion, graph traversal, and dynamic programming.
 
 [Project Euler](https://projecteuler.net/) is a collection of challenging mathematical and computational problems that require efficient solutions. It’s named after the mathematician Leonhard Euler, and the problems are designed to encourage participants to use both programming and mathematical insight to find answers. Problems typically involve areas like combinatorics, number theory, and optimization, and they gradually increase in difficulty. Project Euler is ideal for building a strong foundation in both mathematical reasoning and coding techniques, with a focus on creating highly optimized and elegant solutions
@@ -39,6 +41,13 @@ Open Source collection of data structures and algorithms in most modern language
 - [Blind 75](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
 - [Neetcode 150](https://neetcode.io/practice)
 - [TopSWE](https://topswe.com/)
+
+## All Public Coding Solutions for Leetcode
+
+These sites post detailed solutions on premium and free Leetcode content.
+
+- [Algo Monster](https://algo.monster/dashboard)
+- [Leetcode.ca](https://leetcode.ca/)
 
 ## Youtube
 - [Neetcode](https://www.youtube.com/c/neetcode)
