@@ -46,9 +46,13 @@ def find_longest_repeating_cycle(limit: int) -> int:
             result_denominator = i
     return result_denominator
 
-print(find_longest_repeating_cycle(1000))
+# print(find_longest_repeating_cycle(1000))
 
 num = longest = 1
+
+'''
+loop over odd numbers starting at 3 incrementing by 2 and skipping those divisible by 5
+'''
 for n in range(3, 1000, 2):
     if n % 5 == 0:
         continue
@@ -71,7 +75,7 @@ def recurring_cycle(n, d):
             return t
     return 0
 
-longest = max(recurring_cycle(1, i) for i in range(2,1001))
+# longest = max(recurring_cycle(1, i) for i in range(2,1001))
 # print([i for i in range(2,1001) if recurring_cycle(1, i) == longest][0])
 
 
