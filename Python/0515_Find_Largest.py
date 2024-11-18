@@ -48,3 +48,24 @@ class Solution:
             res.append(maxi)
         return res
 
+
+class Solution:
+    def largestValues(self, root: Optional[TreeNode]) -> List[int]:
+        q = deque()
+        if root:
+            q.append(root)
+        res = []
+
+        while q:
+            rowmax = -float('inf')
+            nextq = deque()
+            for node in q:
+                rowmax=max(rowmax,node.val)
+                if node.left:
+                    nextq.append(node.left)
+                if node.right:
+                    nextq.append(node.right)
+            res.append(rowmax)
+            q = nextq
+        
+        return res
