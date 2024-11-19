@@ -94,3 +94,17 @@ class Solution:
                 max_sum = max(max_sum, ws)
 
         return max_sum
+
+class Solution:
+    def maximumSubarraySum(self, nums: List[int], k: int) -> int:
+        s = sum(nums[:k])
+        d = {n: i for i, n in enumerate(nums[:k])}
+        ms = s if len(d) == k else 0
+        for i in range(k, len(nums)):
+            s += nums[i] - nums[i-k]
+            d[nums[i]] = i
+            if d[nums[i-k]] == i-k:
+                del d[nums[i-k]]
+            ms = max(s, ms) if len(d) == k else ms
+
+        return ms
