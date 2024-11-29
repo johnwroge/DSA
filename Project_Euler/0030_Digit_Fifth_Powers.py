@@ -10,3 +10,20 @@ The sum of these numbers is 1634 + 8208 + 9474 = 19316.
 
 Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
 '''
+
+def is_valid(num):
+    total = [int(n) ** 5 for n in list(str(num))]
+    total = sum(total)
+    return total == num, total
+
+def find_candidates():
+    result = []
+    for j in range(2, 1000000):
+        can, total = is_valid(j)
+        if can:
+            # print(total)
+            result.append(j)
+    return sum(result)
+
+
+# print(find_candidates())
