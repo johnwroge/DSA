@@ -17,5 +17,6 @@ def is_prime(n):
     return True
 n = 1
 total = sum([n for n in range(2000000) if is_prime(n)])
+print(total)
 
 

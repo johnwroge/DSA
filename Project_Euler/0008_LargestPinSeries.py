@@ -58,7 +58,7 @@ for i in range(12):
 l = 0 
 
 for i in range(12, len(new_array)):
-    print(new_array[i], new_array[l], product)
+    # print(new_array[i], new_array[l], product)
     product *= new_array[i]
 
     if product > maxProduct:

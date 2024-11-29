@@ -8,17 +8,19 @@ What is the smallest positive number that is evenly divisible by all of the numb
 '''
 
 
-def vals ():
-    num = 20
-    while True:
-        print(num)
-        for n in range(1, 21):
-            if num % n > 0:
-                break
-            if n == 20:
-                return num
-        num += 1
-    return 
-print(vals())
+def smallest_multiple():
+    def gcd(a, b):
+        while b:
+            a, b = b, a % b
+        return a
+    
+    def lcm(a, b):
+        return (a * b) // gcd(a, b)
+    
+    result = 1
+    for i in range(1, 21):
+        result = lcm(result, i)
+    return result
+print(smallest_multiple())
 
 

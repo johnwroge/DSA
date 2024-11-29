@@ -22,19 +22,12 @@ Find the difference between the sum of the squares of the first one
 
 '''
 
-def find_squares():
-    num, num2 = 1, 1
-    
-    for i in range(1, 101):
-        num += pow(i, 2)
-        num2 += i
-    result = pow(num2, 2)
-    return result - num
-print(find_squares())
-    
-    
-    
-        
-25164150
 
-25164149
+def sum_square_difference():
+    n = 100
+    sum_of_squares = n * (n + 1) * (2*n + 1) // 6
+    square_of_sum = (n * (n + 1) // 2) ** 2
+    return square_of_sum - sum_of_squares
+print(sum_square_difference())
+    
+    

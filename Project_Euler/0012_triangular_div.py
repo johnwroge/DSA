@@ -55,4 +55,4 @@ for n in range(1,1000000):
         print(Tn)
         break
 tt = time()-t
-print(tt)
+# print(tt)

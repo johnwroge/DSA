@@ -13,7 +13,6 @@ def largest_prime(num):
             num = num / i
         else:
             i= i + 1
-            print(i)
     print ("biggest prime number is: "+str(num)) 
 print(largest_prime(600851475143))
 
