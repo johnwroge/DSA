@@ -31,7 +31,7 @@ def solution():
                 if result == i/j:
                     numerator *= int(i_th)
                     denominator *= int(j_th)
-    return Fraction(numerator, denominator)
+    return Fraction(numerator, denominator).denominator
      
 # Optimized
 
