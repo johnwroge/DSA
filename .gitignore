@@ -4,55 +4,20 @@ C++
 Go
 Java
 
-/Python/syntax_quiz.py
-/JavaScript/CS_Challenges
-Online_Assessments
 
 Typescript/node_modules/
 JavaScript/node_modules/
-node_modules/
-resources.md
-.gitignore
-
+package-lock.json
+node_modules
 
 dist/
 build/
 out/
 lib/
 
-
-*.tsbuildinfo
-logs/
-*.log
-
-.env
-.env.local
-.env.*.local
-
-# Virtual Environment
-venv/
 Project_Euler/venv
-
-
-
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-
-package-lock.json
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-
-coverage/
-
-*.spec.ts
-*.test.ts
 
 
 
