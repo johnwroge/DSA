@@ -1,9 +1,6 @@
 # Data Structures and Algorithms
 
-This repository contains solutions to various algorithm challenges organized by 
-language and a collection of books, sites, and content creators that may be helpful. 
-My goal is to post solutions more regularly as a reference to help others prepare for 
-technical interviews and reinforce concepts. 
+This repository contains solutions to various algorithm challenges and a collection of books, sites, and content creators that may be helpful. My goal is to post solutions more regularly as a reference to help others prepare for technical interviews and reinforce concepts. 
 
 ## Github DSA Collections By Language
 
