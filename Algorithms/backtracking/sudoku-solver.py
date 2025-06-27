@@ -53,4 +53,4 @@ if __name__ == "__main__":
         ['.', '.', '.', '4', '1', '9', '.', '.', '5'],
         ['.', '.', '.', '.', '8', '.', '.', '7', '9']
     ]
-    solve_sudoku(sudoku_board)
+    print(solve_sudoku(sudoku_board))
