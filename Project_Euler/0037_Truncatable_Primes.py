@@ -6,10 +6,6 @@ Find the sum of the only eleven primes that are both truncatable from left to ri
 and right to left. NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
 '''
 
-
-from math import floor
-
-
 from math import floor
 
 
@@ -22,7 +18,6 @@ def is_prime(n):
     if n % 2 == 0 or n % 3 == 0 or n % 5 == 0:
         return False
     
-    # Check odd divisors starting from 7
     for i in range(7, floor(n ** 0.5) + 1, 2):
         if n % i == 0:
             return False
