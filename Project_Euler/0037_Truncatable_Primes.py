@@ -10,7 +10,6 @@ from math import floor
 
 
 def is_prime(n):
-    """Check if a number is prime"""
     if n < 2:
         return False
     if n in {2, 3, 5, 7}:
