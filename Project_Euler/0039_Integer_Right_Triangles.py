@@ -34,7 +34,7 @@ def three_sum(nums, target):
     return res
 
 
-def solution():
+def my_solution():
     results = []
     for n in range(3, 1000):
         arr = [i for i in range(n)]
@@ -42,8 +42,29 @@ def solution():
         results.append((n, len(candidates)))
     results.sort(key = lambda x: x[1])
     return results[-1]
-print(solution())
-# print(is_a_right_triangle(20 ,48 ,52))
-# print(is_a_right_triangle(24,45,51))
-# print(is_a_right_triangle(30,40,50))
+
+# optimized
+
+def count_right_triangles(p):
+    count = 0
+    for a in range(1, p // 3 + 1):
+        for b in range(a, (p - a) // 2 + 1):
+            c = p - a - b
+            if a * a + b * b == c * c:
+                count += 1
+    return count
+
+def solution():
+    max_count = 0
+    best_p = 0
     
+    for p in range(3, 1001):
+        count = count_right_triangles(p)
+        if count > max_count:
+            max_count = count
+            best_p = p
+    
+    return best_p
+
+print(solution())
+
